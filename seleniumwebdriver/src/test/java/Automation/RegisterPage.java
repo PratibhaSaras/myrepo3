@@ -263,5 +263,6 @@ public class RegisterPage {
 	
 	public void validateAccDeletion() {
 		Assert.assertTrue(del_confirmation_text.isDisplayed());
+		System.out.println("");
 	}
 }
