@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Automation.LoginTest">
+      <class name="Automation.RegisterTest">
         <methods>
-          <include name="testWebApp"/>
           <include name="setup"/>
+          <include name="testRegisteration"/>
         </methods>
-      </class> <!-- Automation.LoginTest -->
+      </class> <!-- Automation.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

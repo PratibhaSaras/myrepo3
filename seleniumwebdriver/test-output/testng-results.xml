@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T15:18:42 IST" name="Default suite" finished-at="2024-11-14T15:18:48 IST" duration-ms="5410">
+  <suite started-at="2024-11-25T19:31:10 IST" name="Suite" finished-at="2024-11-25T19:31:24 IST" duration-ms="13941">
     <groups>
     </groups>
-    <test started-at="2024-11-14T15:18:42 IST" name="Default test" finished-at="2024-11-14T15:18:48 IST" duration-ms="5410">
-      <class name="Automation.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Automation.LoginTest@59474f18]" started-at="2024-11-14T15:18:42 IST" name="setup" finished-at="2024-11-14T15:18:45 IST" duration-ms="3177" status="PASS">
+    <test started-at="2024-11-25T19:31:10 IST" name="Test" finished-at="2024-11-25T19:31:24 IST" duration-ms="13941">
+      <class name="Automation.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Automation.RegisterTest@34123d65]" started-at="2024-11-25T19:31:10 IST" name="setup" finished-at="2024-11-25T19:31:15 IST" duration-ms="5542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testWebApp()[pri:1, instance:Automation.LoginTest@59474f18]" started-at="2024-11-14T15:18:45 IST" name="testWebApp" finished-at="2024-11-14T15:18:48 IST" duration-ms="2191" status="PASS">
+        <test-method signature="testRegisteration()[pri:0, instance:Automation.RegisterTest@34123d65]" started-at="2024-11-25T19:31:15 IST" name="testRegisteration" finished-at="2024-11-25T19:31:24 IST" duration-ms="8374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWebApp -->
-      </class> <!-- Automation.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testRegisteration -->
+      </class> <!-- Automation.RegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
