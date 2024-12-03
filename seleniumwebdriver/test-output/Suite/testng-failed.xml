@@ -2,13 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+        <exclude name="Master"/>
+      </run>
+    </groups>
     <classes>
-      <class name="Automation.RegisterTest">
+      <class name="testCases.TC_LoginTDDTest">
         <methods>
-          <include name="setup"/>
-          <include name="testRegisteration"/>
+          <include name="verify_loginDDT" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- Automation.RegisterTest -->
+      </class> <!-- testCases.TC_LoginTDDTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

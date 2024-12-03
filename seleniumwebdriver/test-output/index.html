@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\TestingGitRepo\myrepo3\seleniumwebdriver\src\test\java\Automation\testng.xml</span>
+                    <span>C:\TestingGitRepo\myrepo3\seleniumwebdriver\master.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Automation.RegisterTest" class="method navigator-link" hash-for-method="testRegisteration">testRegisteration</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_LoginTDDTest" class="method navigator-link" hash-for-method="verify_loginDDT(test123@gn.cm, gjhgjhgj, Invalid)">verify_loginDDT(test123@gn.cm, gjhgjhgj, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_LoginTDDTest" class="method navigator-link" hash-for-method="verify_loginDDT(hjhj@h.cm, jhgjhg, Invalid)">verify_loginDDT(hjhj@h.cm, jhgjhg, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_LoginTDDTest" class="method navigator-link" hash-for-method="verify_loginDDT(pratibhasaras@gmail.com, Test@1234, valid)">verify_loginDDT(pratibhasaras@gmail.com, Test@1234, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +131,31 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Automation.RegisterTest</span>
+              <span class="class-name">testCases.TC_LoginTDDTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testRegisteration">
-                  </a> <!-- testRegisteration -->
-                  <span class="method-name">testRegisteration</span>
+                  <a name="verify_loginDDT(test123@gn.cm, gjhgjhgj, Invalid)">
+                  </a> <!-- verify_loginDDT(test123@gn.cm, gjhgjhgj, Invalid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(test123@gn.cm,gjhgjhgj,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(hjhj@h.cm, jhgjhg, Invalid)">
+                  </a> <!-- verify_loginDDT(hjhj@h.cm, jhgjhg, Invalid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(hjhj@h.cm,jhgjhg,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(pratibhasaras@gmail.com, Test@1234, valid)">
+                  </a> <!-- verify_loginDDT(pratibhasaras@gmail.com, Test@1234, valid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(pratibhasaras@gmail.com,Test@1234,valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,16 +163,21 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\TestingGitRepo\myrepo3\seleniumwebdriver\src\test\java\Automation\testng.xml</span>
+            <span class="header-content">C:\TestingGitRepo\myrepo3\seleniumwebdriver\master.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Automation.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_LoginTDDTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -169,6 +201,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_loginDDT</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_loginDDT</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -185,16 +233,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testRegisteration')
-data.setCell(0, 2, 'Automation.RegisterTest')
-data.setCell(0, 3, 8374);
+data.setCell(0, 1, 'verify_loginDDT')
+data.setCell(0, 2, 'testCases.TC_LoginTDDTest')
+data.setCell(0, 3, 33895);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_loginDDT')
+data.setCell(1, 2, 'testCases.TC_LoginTDDTest')
+data.setCell(1, 3, 32032);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_loginDDT')
+data.setCell(2, 2, 'testCases.TC_LoginTDDTest')
+data.setCell(2, 3, 4475);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -220,15 +276,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Automation.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC_LoginTDDTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(Windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testRegisteration</span>
-                <span class="method-start">5548 ms</span>
+                <span class="method-name">verify_loginDDT(pratibhasaras@gmail.com, Test@1234, valid)</span>
+                <span class="method-start">6253 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(test123@gn.cm, gjhgjhgj, Invalid)</span>
+                <span class="method-start">10737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(hjhj@h.cm, jhgjhg, Invalid)</span>
+                <span class="method-start">42769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76664 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
